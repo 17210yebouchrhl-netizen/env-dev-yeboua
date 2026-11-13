@@ -36,3 +36,10 @@
 | `grep -r` | Cherche dans tous les sous-dossiers | `grep -r -l "KLEF" .` |
 | `find` | Retrouve un fichier par son nom | `find . -name "*.js"` |
 | `sort` | Trie les lignes | `sort liste.txt` |
+
+## branches
+
+| commande       | ce qu'elle fait               | exemple      
+| --------       |-------------------------------|-----------
+| git branch     |Liste les branches             |git branch
+|git switch main |Va sur la branche main         |git switch main

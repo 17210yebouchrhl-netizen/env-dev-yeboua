@@ -12,6 +12,6 @@
 
 peuvent être écrites dans mon README pour être refaites à l'identique.
 
-## 2026-11-03 – Système pour le terminal
+## 2026-11-13 -  Hébergement du dépôt : GitHub 
 
-- **Décision :** …
+- **Décision :** installer Node.js avec le dépôt NodeSource et apt.

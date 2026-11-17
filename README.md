@@ -1,4 +1,4 @@
-# env-dev-yeboua (B1 DEV,IFRAN)
+# env-dev-yeboua – Mon environnement de développement (B1 DEV, IFRAN)
 
 Environnement de développement de Yeboua Christ-Hanniel - B1 DEV, IFRAN.
 

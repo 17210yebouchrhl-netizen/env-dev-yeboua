@@ -29,18 +29,26 @@ Environnement de développement de Yeboua Christ-Hanniel - B1 DEV, IFRAN.
 | tree | 2.3.1 | `sudo apt install -y tree` |
 | htop | 3.4.1 | `sudo apt install -y htop` |
 | nano | 8.7.1 | `sudo apt install -y nano` |
-| Node.js | 26.13.1| dépôt NodeSource, puis `sudo apt install -y nodejs` |
+| Node.js | 26.13.1 | dépôt NodeSource, puis `sudo apt install -y nodejs` |
 | npm | 11.20.0 | installé avec Node.js |
 
 ## Installation
 
-1. Installer VirtualBox sur le Mac (virtualbox.org, version macOS / Intel hosts).
-2. Télécharger Ubuntu Desktop, version Intel/AMD 64-bit (ubuntu.com/download/desktop).
-3. Créer la machine virtuelle dans VirtualBox (mémoire 6 à 8 Go, 4 processeurs) et installer Ubuntu.
-4. Dans Ubuntu, lancer le script d'installation :
+### Sur Mac (Intel) ou sur Windows
 
-        cd ~/dev/env-dev-yeboua
-        chmod +x scripts/installer.sh
+1. Installer VirtualBox : virtualbox.org, choisir « macOS / Intel hosts » sur Mac ou « Windows hosts » sur Windows.
+2. Télécharger Ubuntu Desktop 64-bit (ubuntu.com/download/desktop).
+3. Créer la machine virtuelle dans VirtualBox (mémoire 6 à 8 Go, 4 processeurs) et installer Ubuntu.
+   Sur Windows, si la machine ne démarre pas, activer la virtualisation dans le BIOS.
+4. Dans Ubuntu, ouvrir un terminal et récupérer le dépôt :
+
+        mkdir -p ~/dev && cd ~/dev
+        git clone https://github.com/17210yebouchrhl-netizen/env-dev-yeboua.git
+        cd env-dev-yeboua
+
+5. Lancer le script d'installation :
+
+        chmod +x scripts/*.sh
         ./scripts/installer.sh
 
 Colima et Multipass n'ont pas pu être utilisés : mon Mac Intel de 2017 ne les supporte pas (voir JOURNAL.md).
@@ -51,6 +59,10 @@ Colima et Multipass n'ont pas pu être utilisés : mon Mac Intel de 2017 ne les 
 
 Le script affiche les versions d'Ubuntu, Git, Node.js, npm et tree.
 
+## Fiche réseau
+
+Mes adresses IP, mes résultats DNS et les outils réseau sont dans [docs/reseau.md](docs/reseau.md).
+
 ## Contenu du dossier
 
 | Fichier | Rôle |
@@ -58,5 +70,6 @@ Le script affiche les versions d'Ubuntu, Git, Node.js, npm et tree.
 | `README.md` | La fiche de mon poste et comment l'installer |
 | `JOURNAL.md` | Le journal de mes choix |
 | `docs/aide-memoire.md` | Mes commandes Linux |
+| `docs/reseau.md` | Ma fiche réseau : adresses IP, DNS et commandes |
 | `scripts/installer.sh` | Installe les outils dans Ubuntu |
 | `scripts/verifier.sh` | Vérifie que tout est prêt |

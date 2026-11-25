@@ -57,7 +57,7 @@ Colima et Multipass n'ont pas pu être utilisés : mon Mac Intel de 2017 ne les 
 
         ./scripts/verifier.sh
 
-Le script affiche les versions d'Ubuntu, Git, Node.js, npm et tree.
+Le script affiche les versions d'Ubuntu, Git, Node.js, npm, tree et Python, puis le code de réponse de GitHub (`HTTP/2 200`).
 
 ## Fiche réseau
 

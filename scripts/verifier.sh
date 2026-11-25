@@ -11,5 +11,9 @@ echo "npm :"
 npm --version
 echo "tree :"
 tree --version
+echo "python :"
+python3 --version
+echo "Acces a Github :"
+curl -sI https://github.com | head -n 1
 echo
 echo "=== Fin de la vérification ==="
